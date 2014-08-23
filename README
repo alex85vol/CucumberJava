@@ -1,0 +1,71 @@
+Technologies
+-------------
+Java        Coding language
+Cucumber    BDD framework
+Gherkin     Cucumber specification language
+Testng      Unit Testing framework
+Maven       Dependency, build and package management
+
+Intellij project Setup
+----------------------
+For maven support
+    Create a Maven project without any prototype
+
+For Cucmber support
+    Add the following to your pom.xml
+        <dependencies>
+            <dependency>
+                <groupId>info.cukes</groupId>
+                <artifactId>cucumber-java</artifactId>
+                <version>1.1.8</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>info.cukes</groupId>
+                <artifactId>cucumber-jvm</artifactId>
+                <version>1.1.8</version>
+                <type>pom</type>
+            </dependency>
+        </dependencies>
+
+    If maven does not download these directly for you. Go to "Project Structure".
+    On the left side panel, click "Modules". Now on the right side, go to "Dependencies" tab.
+    Below you see a "+" sign. Click no that, add "Library" > "From maven". Type
+    in the search box as "cucumber-java", "cucumber-jvm".
+
+For Testng support
+    You can add cucumber integrated testng in a similar way as mentioned above
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>1.1.8</version>
+            <type>test</type>
+        </dependency>
+
+    Or, you can also add testng separately
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.3</version>
+            <scope>test</scope>
+        </dependency>
+
+For Gherkin support
+    You need to add the following
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>gherkin</artifactId>
+            <version>2.12.2</version>
+            <scope>test</scope>
+        </dependency>
+
+
+
+Intellij plugin support
+-----------------------
+
+For Gherkin files
+    Install gherkin plugin
+
+For Cucumber Stepdef generation
+    Install cucumber-java plugin
