@@ -1,3 +1,5 @@
+package skeleton;
+
 /**
  * Created by sreenidhy on 8/23/14.
  */
