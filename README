@@ -42,7 +42,7 @@ For Testng support
             <type>test</type>
         </dependency>
 
-    Or, you can also add testng separately
+    Or, you can also add testng separately (although I have not done this)
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -51,7 +51,7 @@ For Testng support
         </dependency>
 
 For Gherkin support
-    You need to add the following
+    You can add the following (although I have not done this)
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>gherkin</artifactId>
